@@ -1,0 +1,67 @@
+.talk_item {
+    display: block;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+
+}
+
+.person_info {
+
+    display: table-cell;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.yuan_head {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+
+.talk_body {
+    display: table-cell;
+    width: 100%;
+    padding: 5px;
+}
+
+.talk_head {
+    display: table-row;
+    padding: 5px;
+}
+
+.talk_center {
+
+}
+
+.n_Main {
+    width: 100%;
+    display: table;
+}
+
+.n_Input_Box {
+    width: 100%;
+    height: 70px;
+    margin: 5px;
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+}
+
+.n_postBtn {
+    margin: 10px;
+    display: inline;
+}
+
+.n_Input_text {
+    width: 97%;
+    height: 90px;
+    outline: none;
+}
+
+.n_person_info {
+    display: table-cell;
+    text-align: center;
+}

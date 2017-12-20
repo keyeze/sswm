@@ -1,0 +1,123 @@
+div#wrapper {
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+    border: 0;
+    width: 1134px;
+    text-align: left;
+    background: #64B1FF;
+}
+
+.context {
+    width: 1110px;
+    margin: 5px;
+    padding: 5px 5px 5px 5px;
+    background: #FFF;
+}
+
+.item_num {
+    background: #64B1FF;
+}
+
+p#item_number {
+    margin: 5px;
+    padding: 5px 5px;
+    font-size: 24px;
+    display: inline-block;
+
+}
+
+p#item_style {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.item_body {
+    background: #64B1FF;
+
+}
+
+p#title {
+    margin: 5px;
+    padding: 10px 10px 0px 10px;
+    display: block;
+}
+
+.item {
+    font-size: 18px;
+    background: #FFF;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.item_foot {
+    background: #64B1FF;
+    padding: 0 45px 15px 5px;
+
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    color: #999;
+}
+
+.btn:link, visited {
+    text-decoration: none;
+    color: #999;
+}
+
+.btn:hover, active, focus { /* 这将更改鼠标和键盘导航的背景和文本颜色 */
+    background-color: #0080FF;
+    color: #FFF;
+}
+
+.Progress {
+    background: #64B1FF;
+    padding: 5px 0px 2px 0px;
+
+}
+
+.Progress_bar {
+    width: 84%;
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    background: #FFF;
+    height: 15px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#Progress_bar_block {
+    width: 10%;
+    background: #DEC;
+    color: #000;
+    display: block;
+    float: left;
+    border-radius: 20px;
+    height: 100%;
+    text-align: center;
+    font-size: 0.6em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Progress_bar_block_show {
+    width: 100%;
+    background: none;
+    color: #000;
+    display: block;
+    float: left;
+    border-radius: 20px;
+    height: 100%;
+    text-align: center;
+    font-size: 0.6em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

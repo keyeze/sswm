@@ -1,0 +1,6 @@
+.datagrid-btable .datagrid-cell {
+    padding: 6px 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

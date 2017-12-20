@@ -1,0 +1,62 @@
+div#wrapper {
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+    border: 0;
+    width: 1134px;
+    text-align: left;
+    background: #64B1FF;
+}
+
+div.mywin {
+    margin: 5px 5px 5px 5px;
+    border: 0;
+    padding-top: 5px;
+    width: 1120px;
+    min-height: 600px;
+    text-align: left;
+    background: #FFF;
+}
+
+div.mywin .center .foot li {
+    display: inline-block;
+    margin: 5px;
+
+}
+
+div.mywin .center .bar {
+    background: #64B1FF;
+    display: block;
+    color: #FFF;
+    margin: 5px 5px;
+}
+
+div.mywin .center .bar li {
+    display: inline-block;
+    margin: 5px;
+
+}
+
+div.mywin .center .centinfo li {
+    text-align: left;
+}
+
+div.mywin .center .centinfo div {
+    display: inline-block;
+}
+
+div.centinfo ul li hr {
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #0066CC;
+}
+
+div.centinfo, div.foot {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+div.foot {
+    text-align: center;
+}
+

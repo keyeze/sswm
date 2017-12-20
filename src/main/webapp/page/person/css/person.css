@@ -1,0 +1,246 @@
+div#wrapper {
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+    border: 0;
+    width: 764px;
+    height: 320px;
+    text-align: left;
+    background: #64B1FF;
+}
+
+div.window {
+    margin: 0 5px 5px 5px;
+    border: 0;
+    width: 750px;
+    text-align: left;
+    background: #FFF;
+}
+
+div.video {
+    padding: 5px 5px 5px 5px;
+    float: left;
+    width: 80%;
+
+}
+
+div.select {
+    padding: 5px 0px 5px 5px;
+    float: left;
+    width: 18%;
+
+}
+
+div#talk {
+    margin: 20px 0px 5px 0px;
+
+}
+
+.header_menu {
+    width: 1120px;
+
+}
+
+.person_head {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px 10px 8px 10px;
+    background: #000;
+}
+
+.center {
+    width: 100%;
+    background: #DEC;
+}
+
+.left_center {
+    display: table-cell;
+    background: #FFF;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+.right_center {
+    display: table-cell;
+    background: #FFF;
+    width: 100%;
+}
+
+.info_item p#title {
+    background: #64B1FF;
+    display: block;
+    color: #FFF;
+    padding: 5px 10px;
+}
+
+.info_item {
+    background: #FFF;
+    margin: 0 10px;
+}
+
+strong.table_item {
+    color: #64B1FF;
+    padding-right: 30px;
+    display: inline-block;
+
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.pie_left, .pie_right {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left, .right {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    background: #DEC;
+    top: 0;
+    left: 0;
+
+}
+
+.pie_right, .right {
+    clip: rect(0, auto, auto, 60px);
+}
+
+.pie_left, .left {
+    clip: rect(0, 60px, auto, 0);
+}
+
+.mask {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    left: 15px;
+    top: 15px;
+    background: #FFF;
+    position: absolute;
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+}
+
+.circle_wrapper {
+    width: 130px;
+    height: 120px;
+    display: table-cell;
+    vertical-align: top;
+
+}
+
+.person_card {
+    width: 200px;
+    height: 270px;
+    background: #64B1FF;
+    border-radius: 5px;
+    margin: 15px 0;
+    overflow: hidden;
+    padding: 5px;
+
+}
+
+.person_card_inner {
+    width: 100%;
+    height: 81%;
+
+    background: #FFF;
+
+}
+
+.Progress {
+    background: #64B1FF;
+    padding: 5px 0px 2px 0px;
+
+}
+
+.Progress_bar {
+    width: 62%;
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    background: #FFF;
+    height: 15px;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+
+}
+
+#Progress_bar_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    background: #DEC;
+    color: #000;
+    display: inline-block;
+    float: left;
+    border-radius: 20px;
+    height: 100%;
+    text-align: center;
+    font-size: 0.6em;
+
+}
+
+ul.friendOL_ul, ul.friendNOL_ul {
+    display: none;
+}
+
+ul.friendOL_ul li {
+    color: #0F0;
+}
+
+ul.friendOL_ul li a:link, visited {
+    color: #000;
+    text-decoration: none;
+
+}
+
+ul.friendOL_ul li a:hover, active {
+    color: #0CF;
+    text-decoration: none;
+
+}
+
+ul.friendNOL_ul li {
+    color: #F00;
+}
+
+ul.friendNOL_ul li a:link, visited {
+    color: #000;
+    text-decoration: none;
+
+}
+
+ul.friendNOL_ul li a:hover, active {
+    color: #0CF;
+    text-decoration: none;
+
+}
+
+table#awr td {
+    text-align: center;
+    border: 1px solid;
+}
+
+div#alterPersion {
+    margin: 0 auto;
+    border: 1px;
+    width: 450px;
+    height: 450px;
+    padding: 10px;
+}

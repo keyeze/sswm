@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+    <!--<property name="location" value="classpath:jdbc.properties"/>-->
+    <!--</bean>-->
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:jdbc.properties"/>
+    </bean>
+
+    <context:component-scan base-package="com.chan.dao"/>
+
+    <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close" id="dataSource">
+        <!--数据库连接基础配置-->
+        <property name="driverClass" value="${dataSource.driverClass}"/>
+        <property name="jdbcUrl" value="${main.dataSource.jdbcUrl}"/>
+        <property name="user" value="${dataSource.user}"/>
+        <property name="password" value="${dataSource.password}"/>
+
+        <!--数据库连接池参数配置-->
+        <!--最大连接数设置-->
+        <property name="maxPoolSize" value="${maxPoolSize}"/>
+        <!--最小连接数设置-->
+        <property name="minPoolSize" value="${dataSource.minPoolSize}"/>
+        <!--连接池初始化大小-->
+        <property name="initialPoolSize" value="${dataSource.initialPoolSize}"/>
+        <!--连接池最小增量-->
+        <property name="acquireIncrement" value="${dataSource.acquireIncrement}"/>
+        <!--最大空闲时间-->
+        <property name="maxIdleTime" value="${dataSource.maxIdleTime}"/>
+        <!--数据源中 PrepareStatements 最大数量-->
+        <property name="maxStatements" value="${dataSource.maxStatements}"/>
+        <!--自检时间-->
+        <property name="idleConnectionTestPeriod" value="${dataSource.idleConnectionTestPeriod}"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="mapperLocations" value="classpath:beanMaps/*Mapper.xml"/>
+    </bean>
+
+    <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- 配置SqlSessionTemplate -->
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+    <!-- 配置mybatis mapper接口 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.chan.dao"/>
+        <property name="sqlSessionTemplateBeanName" value="sqlSessionTemplate"/>
+    </bean>
+
+
+</beans>

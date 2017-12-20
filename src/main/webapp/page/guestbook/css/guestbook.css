@@ -1,0 +1,156 @@
+hr {
+    margin: 5px 0;
+    width: 750px;
+    display: block;
+    color: #f4f4f4;
+
+}
+
+div.msg_item {
+    overflow: hidden;
+    /*height: 200px;*/
+    background: #fff3f3;
+
+}
+
+div.easyui-panel {
+    border-radius: 10px;
+
+}
+
+div.center {
+    display: none;
+}
+
+div.msg_item div.top {
+    display: table;
+    background: #64B1FF;
+    text-align: right;
+    padding: 3px;
+    width: 100%;
+
+}
+
+div.msg_item div.top div {
+    display: table-cell;
+    text-align: left;
+}
+
+div.msg_item div.top div laber {
+    padding: 10px;
+}
+
+div.msg_item div.top div.show {
+    width: 90px;
+}
+
+div.msg_item hr {
+    margin: 0;
+    width: 100%;
+    color: #f4f4f4;
+}
+
+div.msg_item div.center div.left {
+    display: table-cell;
+    max-width: 120px;
+    min-width: 110px;
+    min-height: 140px;
+    width: 15%;
+    text-align: center;
+    padding-top: 10px;
+    height: inherit;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+div.msg_item div.center div.left div img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+div.msg_item div.center div.left span {
+    margin-top: 10px;
+    display: block;
+}
+
+div.msg_item div.center div.right {
+    margin: 0;
+    display: table-cell;
+    width: 85%;
+    padding-top: 10px;
+    height: inherit;
+}
+
+div.msg_item div.center div.right div, div.msg_item div.center div.right textarea {
+    width: 95%;
+    margin: 3px;
+    text-align: right;
+}
+
+div.msg_item div.center div.right a {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+div.msg_item div.center div.right div laber {
+    padding-top: 20px;
+
+}
+
+div.msg_item div.center div.right textarea {
+    margin-bottom: 15px;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+    text-align: left;
+
+}
+
+div.msg_item div.center div.answer hr {
+    margin-left: 10%;
+    width: 92%;
+    display: block;
+}
+
+div.msg_item div.answer div {
+    margin-left: 7%;
+    display: block;
+}
+
+div.msg_item div.center div.answer div {
+    overflow: auto;
+    max-height: 200px;
+}
+
+div.msg_item div.center div.answer {
+    display: table;
+    width: inherit;
+    margin-left:4%;
+}
+
+div.msg_item div.center div.answer div.left {
+    display: table-cell;
+    width: 60px;
+    padding-top: 10px;
+    height: inherit;
+    vertical-align: top;
+    margin-right: 10px;
+    text-align: center;
+}
+
+div.msg_item div.center div.answer div.left img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+div.msg_item div.answer div.right {
+    display: table-cell;
+    margin: 0;
+    width: 85%;
+    padding-top: 10px;
+    height: inherit;
+}
